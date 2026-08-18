@@ -1,0 +1,81 @@
+;
+; STANDARD MD INPUT OPTIONS FOR MARTINI 2.x
+; Updated 15 Jul 2015 by DdJ
+;
+; for use with GROMACS 5
+; For a thorough comparison of different mdp options in combination with the Martini force field, see:
+; D.H. de Jong et al., Martini straight: boosting performance using a shorter cutoff and GPUs, submitted.
+
+title                    = Martini ('new' parameters) NPT eq
+
+; TIMESTEP IN MARTINI 
+; Most simulations are numerically stable with dt=40 fs in Martini2 
+; Most simulations are numerically stable with dt=10 fs in Martini3 
+
+integrator               = md
+dt                       = 0.01  
+nsteps                   = 80000000 ; 800ns
+nstcomm                  = 100
+comm-grps		       = 
+
+nstxout                  = 1000
+nstvout                  = 1000
+nstfout                  = 1000
+nstlog                   = 1000
+nstenergy                = 1000
+nstxout-compressed       = 1000
+compressed-x-precision   = 1000
+compressed-x-grps        = System
+energygrps               = System
+cutoff-scheme            = Verlet
+nstlist                  = 20
+verlet-buffer-tolerance  = 0.005
+ns_type                  = grid
+pbc                      = xyz
+periodic-molecules       = yes
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; coulomb settings
+coulombtype      = cut-off
+coulomb-modifier = Potential-shift-verlet
+rcoulomb         = 1.1                  ; epsilon_r  = 2.5 (when use polarizable water)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; VDW
+vdw_type                 = cutoff  
+vdw-modifier             = Potential-shift-verlet
+rvdw                     = 1.1
+
+
+; MARTINI and TEMPERATURE/PRESSURE
+tcoupl                   = v-rescale
+nsttcouple               = -1
+tc-grps                  = system
+tau_t      = 1.0 
+ref_t      = 293
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+Pcoupl                   = no     ;     preNPT use berendsen or C-rescale(new GROMACS) . NPT use parrinello-rahman
+Pcoupltype               = isotropic
+tau_p                    = 12.0     ; normal is 12.0
+compressibility          = 4.5e-5       ;4.5e-5 is water value, but other is similar is ok, dont worry it.
+ref_p                    = 1.0
+
+
+
+; GENERATE VELOCITIES FOR STARTUP RUN
+gen_vel                  = yes
+gen_temp                 = 293
+gen_seed                 = -1
+
+
+; MARTINI and CONSTRAINTS 
+; for ring systems and stiff bonds constraints are defined
+; which are best handled using Lincs. 
+
+constraints              = none
+constraint_algorithm = lincs
+lincs-order          = 8
+lincs-iter           = 2
+
+
+

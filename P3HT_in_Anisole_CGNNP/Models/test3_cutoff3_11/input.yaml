@@ -1,0 +1,89 @@
+activation: tanh
+aggr: add
+atom_filter: -1
+attn_activation: silu
+batch_size: 16
+box_vecs:
+- - 104.6733
+  - 0.0
+  - 0.0
+- - 0.0
+  - 104.5998
+  - 0.0
+- - 0.0
+  - 0.0
+  - 104.5998
+charge: false
+check_errors: true
+checkpoint_monitor: val_total_mse_loss
+coord_files: coords_combined.npy
+cutoff_lower: 2.0
+cutoff_upper: 13.0
+dataset: Custom
+dataset_arg: null
+dataset_preload_limit: 1024
+dataset_root: ~/data
+derivative: true
+distance_influence: both
+early_stopping_monitor: val_total_mse_loss
+early_stopping_patience: 30
+ema_alpha_neg_dy: 1.0
+ema_alpha_y: 1.0
+embed_files: 1_embedding10chains_7types.npy
+embedding_dimension: 128
+energy_files: null
+equivariance_invariance_group: O(3)
+force_files: P3HT_deltaforces.npy
+gradient_clipping: 0.0
+inference_batch_size: 16
+load_model: null
+load_weights: null
+log_dir: test3_cutoff3_15
+lr: 0.0005
+lr_factor: 0.8
+lr_metric: val
+lr_min: 1.0e-06
+lr_patience: 10
+lr_warmup_steps: 2000
+max_num_neighbors: 72
+max_z: 100
+model: graph-network
+neg_dy_weight: 1.0
+neighbor_embedding: true
+ngpus: -1
+num_epochs: 2000
+num_heads: 8
+num_layers: 4
+num_nodes: 1
+num_rbf: 18
+num_workers: 8
+output_mlp_num_layers: 0
+output_model: Scalar
+precision: 32
+prior_model: null
+rbf_type: expnorm
+redirect: false
+reduce_op: add
+remove_ref_energy: false
+reset_trainer: false
+save_interval: 2
+seed: 94572
+spin: false
+splits: null
+standardize: false
+static_shapes: false
+tensorboard_use: false
+test_interval: 2
+test_size: 0.1
+train_loss: mse_loss
+train_loss_arg: null
+train_size: null
+trainable_rbf: true
+val_size: 0.05
+vector_cutoff: false
+wandb_name: training
+wandb_project: training_
+wandb_resume_from_id: null
+wandb_use: false
+weight_decay: 1.0e-05
+y_weight: 1.0

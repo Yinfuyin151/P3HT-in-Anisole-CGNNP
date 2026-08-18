@@ -1,0 +1,75 @@
+; STANDARD MD INPUT OPTIONS FOR MARTINI 2.x
+; Updated 15 Jul 2015 by DdJ
+;work SI cite 2016 OPLS-modified force field by Wildman.
+;
+
+constraints              = none ; write none here and put itp into its directory, so that gromacs can use contraints in the itp automatically
+;;;;;;;;;;;;;define=-DFLEXIBLE ;;;;;;;;;;;;;;constraint_algorithm     = Lincs   
+
+integrator =md
+; emtol       = 100.0        ; Stop minimization when the maximum force < 100.0 kJ/mol/nm
+; emstep   =    0.001
+dt           = 0.001            ; 1fs
+nsteps      = 50000000         ;  50000ps=50ns
+
+; Parameters describing how to find the neighbors of each atom and how to calculate the interactions
+
+nstcomm                  = 100
+comm-grps		       = 
+
+nstxout                  = 2000
+nstvout                  = 2000
+nstfout                  = 2000
+nstlog                   = 2000
+nstenergy                = 2000
+nstxout-compressed       = 2000
+compressed-x-precision   = 100
+compressed-x-grps        = System
+energygrps               = System 
+
+; Neighbor searching
+nstlist                       = 100
+rlist                             = 1.1
+
+; Cutoff schemes
+cutoff-scheme   = Verlet        ;;Buffered neighbor searching
+ns_type                    = grid
+
+; Electrostatics
+coulombtype             = PME
+rcoulomb                      = 1.1
+fourierspacing            = 0.12
+fourier_nx                   = 0
+fourier_ny                   = 0
+fourier_nz                   = 0
+pme_order                  = 4
+ewald_rtol                   = 1e-5
+
+; Van der Waals interactions
+vdwtype                     = cut-off
+rvdw                          = 1.1
+vdw-modifier = force-switch
+rvdw-switch                = 1.0
+
+; Periodic boundary conditions
+pbc                              = xyz   ;;系统在x、y、z方向都使用周期性边界条件（PBC）
+periodic-molecules       = yes
+
+;;;;;;;;;;;;;;;;;;;;;;;;; Temp1
+Tcoupl                        = v-rescale   ;;v-rescale or no
+tau_t                           = 0.1
+tc-grps                        = system
+ref_t                            = 293
+
+; Pressure
+pcoupl                          =  no  ;; berendsen or no
+tau_p                            = 5.0
+compressibility              = 4.5e-5
+ref_p                              = 1.0
+
+; GENERATE VELOCITIES FOR STARTUP RUN
+gen_vel                  = no
+gen_temp                 = 293
+gen_seed                 = -1
+
+

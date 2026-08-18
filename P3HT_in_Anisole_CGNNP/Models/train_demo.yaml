@@ -1,0 +1,64 @@
+#############数据与分割##################
+dataset: Custom
+test_size: 0.1  
+val_size: 0.05
+##########数据集##########
+coord_files: "coords_combined.npy"        
+embed_files: "embedding.npy"
+force_files: "P3HT_deltaforces.npy"
+box_vecs:
+- - 79.1695
+  - 0.0
+  - 0.0
+- - 0.0
+  - 79.2076
+  - 0.0
+- - 0.0
+  - 0.0
+  - 79.2076
+max_num_neighbors: 72
+cutoff_upper: 11.0
+cutoff_lower: 3.0
+###########训练流程###########
+activation: tanh   ##TUT用了tanh
+batch_size: 16
+inference_batch_size: 16
+num_epochs: 2000
+lr: 0.0005       
+lr_factor: 0.8
+lr_min: 1.0e-06
+lr_patience: 10
+lr_warmup_steps: 2000
+early_stopping_patience: 30
+weight_decay: 0.00001
+seed: 94572
+##########评估与保存###########
+save_interval: 2
+test_interval: 2
+#########并行与硬件########### 
+num_nodes: 1    
+ngpus: -1     
+num_workers: 8      
+######model物理/结构超参###########
+model: graph-network   
+embedding_dimension: 128    
+num_layers: 4 
+num_rbf: 18 
+rbf_type: expnorm
+trainable_rbf: true
+neighbor_embedding: true
+derivative: true 
+######schnet-specific parameters###########          
+max_z: 100 
+
+
+
+
+
+
+
+
+
+
+
+
