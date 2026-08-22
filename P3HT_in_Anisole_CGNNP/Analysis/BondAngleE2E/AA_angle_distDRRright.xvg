@@ -1,0 +1,67 @@
+# This file was created Mon Jun 29 14:39:59 2026
+# Created by:
+#                      :-) GROMACS - gmx angle, 2019.6 (-:
+# 
+# Command line:
+#   gmx angle -n angle.ndx -f CGMDtraj.xtc -type angle -binwidth 1 -od AA_angle_distDRRright.xvg
+# gmx angle is part of G R O M A C S:
+#
+# Getting the Right Output Means no Artefacts in Calculating Stuff
+#
+@    title "Angle Distribution: DRRright"
+@    xaxis  label "Degrees"
+@    yaxis  label ""
+@TYPE xy
+@    subtitle "average angle: 73.3961\So\N"
+        50    0.000000
+        51    0.000001
+        52    0.000006
+        53    0.000022
+        54    0.000065
+        55    0.000179
+        56    0.000364
+        57    0.000859
+        58    0.001694
+        59    0.003194
+        60    0.005502
+        61    0.009023
+        62    0.013566
+        63    0.018949
+        64    0.025506
+        65    0.032801
+        66    0.040154
+        67    0.046438
+        68    0.051315
+        69    0.054426
+        70    0.054903
+        71    0.053755
+        72    0.052364
+        73    0.051608
+        74    0.051060
+        75    0.051427
+        76    0.052240
+        77    0.052008
+        78    0.050041
+        79    0.045219
+        80    0.038163
+        81    0.030928
+        82    0.025787
+        83    0.020893
+        84    0.017327
+        85    0.013894
+        86    0.011061
+        87    0.008109
+        88    0.005766
+        89    0.003784
+        90    0.002300
+        91    0.001420
+        92    0.000799
+        93    0.000491
+        94    0.000297
+        95    0.000157
+        96    0.000077
+        97    0.000038
+        98    0.000014
+        99    0.000002
+       100    0.000002
+       101    0.000000
