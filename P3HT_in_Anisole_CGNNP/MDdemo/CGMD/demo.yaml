@@ -1,0 +1,35 @@
+forcefield: P3HT.yaml
+topology: P3HT.psf
+coordinates: initial10chain8mer.xtc
+extended_system: box_originalsize.xsc
+
+log_dir: P3HTanisole_1trajs_test4_50ns_1fs
+output: output
+output_period: 1000
+save_period: 1000
+device: cuda:0
+precision: double
+
+seed: 2
+langevin_gamma: 1
+langevin_temperature: 293
+timestep: 1
+minimize: 2000
+steps: 50000000
+temperature: 293
+replicas: 2
+
+forceterms:
+- bonds
+- angles
+- repulsioncg
+
+exclusions: ("bonds", "angles", "1-4")
+cutoff: 11
+switch_dist: None
+rfa: false
+external:
+  aggr: add 
+  module: torchmdnet.calculators
+  embeddings: embedding.npy
+  file: epoch=883.ckpt

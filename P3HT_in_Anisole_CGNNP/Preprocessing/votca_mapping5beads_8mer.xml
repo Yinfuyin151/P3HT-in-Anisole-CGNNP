@@ -1,0 +1,280 @@
+<cg_molecule>
+  <name>P3HT8mer</name>
+  <ident>P3HT8mer</ident>
+  <topology>
+    <cg_beads>
+      <cg_bead>
+        <name>S1</name>
+        <type>S</type>
+        <mapping>S</mapping>
+        <beads>1:T6B:S</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>A1</name>
+        <type>A</type>
+        <mapping>A1</mapping>
+        <beads>1:T6B:C1 1:T6B:C2 1:T6B:H1 1:T6B:H2</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>B1</name>
+        <type>B</type>
+        <mapping>B</mapping>
+        <beads>1:T6B:C3 1:T6B:C4</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>D1</name>
+        <type>D</type>
+        <mapping>D</mapping>
+        <beads>1:T6B:CS1 1:T6B:HS11 1:T6B:HS12 1:T6B:CS2 1:T6B:HS21 1:T6B:HS22 1:T6B:CS3 1:T6B:HS31 1:T6B:HS32</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>E1</name>
+        <type>E</type>
+        <mapping>E</mapping>
+        <beads>1:T6B:CS4 1:T6B:HS41 1:T6B:HS42 1:T6B:CS5 1:T6B:HS51 1:T6B:HS52 1:T6B:CS6 1:T6B:HS61 1:T6B:HS62 1:T6B:HS63</beads>
+      </cg_bead>	
+      <cg_bead>
+        <name>S2</name>
+        <type>S</type>
+        <mapping>S</mapping>
+        <beads>2:T6A:S</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>A2</name>
+        <type>A</type>
+        <mapping>A</mapping>
+        <beads>2:T6A:C1 2:T6A:C2  2:T6A:H2</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>B2</name>
+        <type>B</type>
+        <mapping>B</mapping>
+        <beads>2:T6A:C3 2:T6A:C4</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>D2</name>
+        <type>D</type>
+        <mapping>D</mapping>
+        <beads>2:T6A:CS1 2:T6A:HS11 2:T6A:HS12 2:T6A:CS2 2:T6A:HS21 2:T6A:HS22 2:T6A:CS3 2:T6A:HS31 2:T6A:HS32</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>E2</name>
+        <type>E</type>
+        <mapping>E</mapping>
+        <beads>2:T6A:CS4 2:T6A:HS41 2:T6A:HS42 2:T6A:CS5 2:T6A:HS51 2:T6A:HS52 2:T6A:CS6 2:T6A:HS61 2:T6A:HS62 2:T6A:HS63</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>S3</name>
+        <type>S</type>
+        <mapping>S</mapping>
+        <beads>3:T6I:S</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>A3</name>
+        <type>A</type>
+        <mapping>A</mapping>
+        <beads>3:T6I:C1 3:T6I:C2  3:T6I:H2</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>B3</name>
+        <type>B</type>
+        <mapping>B</mapping>
+        <beads>3:T6I:C3 3:T6I:C4</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>D3</name>
+        <type>D</type>
+        <mapping>D</mapping>
+        <beads>3:T6I:CS1 3:T6I:HS11 3:T6I:HS12 3:T6I:CS2 3:T6I:HS21 3:T6I:HS22 3:T6I:CS3 3:T6I:HS31 3:T6I:HS32</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>E3</name>
+        <type>E</type>
+        <mapping>E</mapping>
+        <beads>3:T6I:CS4 3:T6I:HS41 3:T6I:HS42 3:T6I:CS5 3:T6I:HS51 3:T6I:HS52 3:T6I:CS6 3:T6I:HS61 3:T6I:HS62 3:T6I:HS63</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>S4</name>
+        <type>S</type>
+        <mapping>S</mapping>
+        <beads>4:T6I:S</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>A4</name>
+        <type>A</type>
+        <mapping>A</mapping>
+        <beads>4:T6I:C1 4:T6I:C2  4:T6I:H2</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>B4</name>
+        <type>B</type>
+        <mapping>B</mapping>
+        <beads>4:T6I:C3 4:T6I:C4</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>D4</name>
+        <type>D</type>
+        <mapping>D</mapping>
+        <beads>4:T6I:CS1 4:T6I:HS11 4:T6I:HS12 4:T6I:CS2 4:T6I:HS21 4:T6I:HS22 4:T6I:CS3 4:T6I:HS31 4:T6I:HS32</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>E4</name>
+        <type>E</type>
+        <mapping>E</mapping>
+        <beads>4:T6I:CS4 4:T6I:HS41 4:T6I:HS42 4:T6I:CS5 4:T6I:HS51 4:T6I:HS52 4:T6I:CS6 4:T6I:HS61 4:T6I:HS62 4:T6I:HS63</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>S5</name>
+        <type>S</type>
+        <mapping>S</mapping>
+        <beads>5:T6I:S</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>A5</name>
+        <type>A</type>
+        <mapping>A</mapping>
+        <beads>5:T6I:C1 5:T6I:C2 5:T6I:H2</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>B5</name>
+        <type>B</type>
+        <mapping>B</mapping>
+        <beads>5:T6I:C3 5:T6I:C4</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>D5</name>
+        <type>D</type>
+        <mapping>D</mapping>
+        <beads>5:T6I:CS1 5:T6I:HS11 5:T6I:HS12 5:T6I:CS2 5:T6I:HS21 5:T6I:HS22 5:T6I:CS3 5:T6I:HS31 5:T6I:HS32</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>E5</name>
+        <type>E</type>
+        <mapping>E</mapping>
+        <beads>5:T6I:CS4 5:T6I:HS41 5:T6I:HS42 5:T6I:CS5 5:T6I:HS51 5:T6I:HS52 5:T6I:CS6 5:T6I:HS61 5:T6I:HS62 5:T6I:HS63</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>S6</name>
+        <type>S</type>
+        <mapping>S</mapping>
+        <beads>6:T6I:S</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>A6</name>
+        <type>A</type>
+        <mapping>A</mapping>
+        <beads>6:T6I:C1 6:T6I:C2 6:T6I:H2</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>B6</name>
+        <type>B</type>
+        <mapping>B</mapping>
+        <beads>6:T6I:C3 6:T6I:C4</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>D6</name>
+        <type>D</type>
+        <mapping>D</mapping>
+        <beads>6:T6I:CS1 6:T6I:HS11 6:T6I:HS12 6:T6I:CS2 6:T6I:HS21 6:T6I:HS22 6:T6I:CS3 6:T6I:HS31 6:T6I:HS32</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>E6</name>
+        <type>E</type>
+        <mapping>E</mapping>
+        <beads>6:T6I:CS4 6:T6I:HS41 6:T6I:HS42 6:T6I:CS5 6:T6I:HS51 6:T6I:HS52 6:T6I:CS6 6:T6I:HS61 6:T6I:HS62 6:T6I:HS63</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>S7</name>
+        <type>S</type>
+        <mapping>S</mapping>
+        <beads>7:T6A:S</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>A7</name>
+        <type>A</type>
+        <mapping>A</mapping>
+        <beads>7:T6A:C1 7:T6A:C2 7:T6A:H2</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>B7</name>
+        <type>B</type>
+        <mapping>B</mapping>
+        <beads>7:T6A:C3 7:T6A:C4</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>D7</name>
+        <type>D</type>
+        <mapping>D</mapping>
+        <beads>7:T6A:CS1 7:T6A:HS11 7:T6A:HS12 7:T6A:CS2 7:T6A:HS21 7:T6A:HS22 7:T6A:CS3 7:T6A:HS31 7:T6A:HS32</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>E7</name>
+        <type>E</type>
+        <mapping>E</mapping>
+        <beads>7:T6A:CS4 7:T6A:HS41 7:T6A:HS42 7:T6A:CS5 7:T6A:HS51 7:T6A:HS52 7:T6A:CS6 7:T6A:HS61 7:T6A:HS62 7:T6A:HS63</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>S8</name>
+        <type>S</type>
+        <mapping>S</mapping>
+        <beads>8:T6E:S</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>A8</name>
+        <type>A</type>
+        <mapping>A</mapping>
+        <beads>8:T6E:C1 8:T6E:C2 8:T6E:H2</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>B8</name>
+        <type>B</type>
+        <mapping>B8</mapping>
+        <beads>8:T6E:C3 8:T6E:C4 8:T6E:H4</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>D8</name>
+        <type>D</type>
+        <mapping>D</mapping>
+        <beads>8:T6E:CS1 8:T6E:HS11 8:T6E:HS12 8:T6E:CS2 8:T6E:HS21 8:T6E:HS22 8:T6E:CS3 8:T6E:HS31 8:T6E:HS32</beads>
+      </cg_bead>
+      <cg_bead>
+        <name>E8</name>
+        <type>E</type>
+        <mapping>E</mapping>
+        <beads>8:T6E:CS4 8:T6E:HS41 8:T6E:HS42 8:T6E:CS5 8:T6E:HS51 8:T6E:HS52 8:T6E:CS6 8:T6E:HS61 8:T6E:HS62 8:T6E:HS63</beads>
+      </cg_bead>
+    </cg_beads>
+    <cg_bonded>
+    </cg_bonded>
+  </topology>
+  <maps>
+    <map>
+      <name>S</name>
+      <weights> 32</weights>
+    </map>
+    <map>
+      <name>A1</name>
+      <weights> 12 12 1 1</weights>
+    </map>
+    <map>
+      <name>A</name>
+      <weights> 12 12 1</weights>
+    </map>
+    <map>
+      <name>B</name>
+      <weights> 12 12</weights>
+    </map>	
+    <map>
+      <name>B8</name>
+      <weights> 12 1 1</weights>
+    </map>		
+    <map>
+      <name>D</name>
+      <weights> 12 1 1 12 1 1 12 1 1</weights>
+    </map>	
+    <map>
+      <name>E</name>
+      <weights> 12 1 1 12 1 1 12 1 1 1</weights>
+    </map>
+  </maps>
+</cg_molecule>

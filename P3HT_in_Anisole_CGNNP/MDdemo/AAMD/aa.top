@@ -1,0 +1,14 @@
+#include "./modoplsaa.ff/forcefield.itp"
+#include "P3HT8mer.itp"
+#include "anisole.itp"
+
+
+[ system ]
+; name
+A mixture of P3HT8 and 2500anisole
+
+[ molecules ]
+; name  number
+P3HT8mer 10
+MOL 2500
+
